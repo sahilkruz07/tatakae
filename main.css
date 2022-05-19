@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+.nav{
+    background-color: blanchedalmond;
+    /* border: 0.5px black solid; */
+    box-shadow: 3px 3px 10px rgb(84, 82, 82);
+
+    
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav_menu{
+    width:37vw;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 550;
+    font-size: 3.5vh;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.logo{
+    padding: 0.5em;
+    
+    width:22vw;
+   
+    /* text-align: center; */
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#logo1{
+    height: 10vh;
+    width: auto;
+}
