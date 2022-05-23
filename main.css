@@ -170,6 +170,14 @@ a{
 .g_box:nth-child(6) {
     grid-column: span 2;
 }
+/* 
+.g_content{
+    width:100%;
+} */
+
+.g_content p{
+    color: #fff;
+}
 
 
 @media (max-width:991px)
