@@ -20,7 +20,7 @@ body{
     /* border: 0.5px black solid; */
     box-shadow: 3px 3px 10px rgb(84, 82, 82);
 
-    
+    width: 100%;
 
     display: flex;
     justify-content: space-between;
@@ -170,3 +170,31 @@ a{
 .g_box:nth-child(6) {
     grid-column: span 2;
 }
+
+
+@media (max-width:991px)
+{
+    .g_container{
+        position: relative;
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-rows: minmax(100px, auto);
+            margin: 40px;
+            grid-auto-flow: dense;
+            grid-gap: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav_menu a:not(:first-child) {
+        display: none;
+    }
+
+    /* .topnav a.icon {
+        float: right;
+        display: block;
+    } */
+}
+
+
