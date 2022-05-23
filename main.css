@@ -8,7 +8,9 @@
 
 
 
-
+body{
+    background: #222;
+}
 
 
 
@@ -33,7 +35,7 @@
     justify-content: space-around;
     align-items: center;
     font-weight: 550;
-    font-size: 3.5vh;
+    font-size: 1.5vw;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
@@ -49,7 +51,9 @@ a{
     width:22vw;
    
     /* text-align: center; */
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+
+    font-size: 1.5vw;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -115,4 +119,54 @@ a{
             backdrop-filter: blur(10px);
             border:1px rgba(255,255,255,0.5) solid;
 
+}
+
+
+.g_container{
+
+    position:relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows:  minmax(100px, auto);
+    margin:40px;
+    grid-auto-flow: dense;
+    grid-gap:10px;
+}
+
+.g_box{
+    
+    background: #333;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    /* align-items:center; */
+    transition:0.5s;
+    color:#fff;
+}
+
+.g_box:hover{
+    background: #e91e63;
+
+}
+
+.g_box img
+{
+    position: relative;
+    max-width: 360px;
+    
+}
+
+.g_box:nth-child(2)
+{
+    grid-column: span 2;
+}
+
+.g_box:nth-child(1) {
+    grid-row: span 2;
+}
+
+.g_box:nth-child(6) {
+    grid-column: span 2;
 }
