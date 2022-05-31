@@ -40,6 +40,28 @@ body{
     letter-spacing: 0.1rem;
 }
 
+.nav_item{
+    position: relative;
+
+}
+
+.nav_item::after{
+    content: "";
+    position:absolute;
+    background-color: #514012;
+    height: 3px;
+    width: 0;
+    left:0;
+    bottom: -10px;
+    transition: all 0.5s ease;
+
+}
+
+.nav_item:hover::after{
+    width:100%;
+}
+
+
 a{
     text-decoration: none;
     color: inherit;
