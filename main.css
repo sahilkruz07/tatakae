@@ -30,7 +30,7 @@ body{
 
 .nav_menu{
     width:37vw;
-    
+    color:red;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -48,13 +48,17 @@ body{
 .nav_item::after{
     content: "";
     position:absolute;
-    background-color: #514012;
+    background-color: #000000;
     height: 3px;
     width: 0;
     left:0;
     bottom: -10px;
     transition: all 0.3s ease;
 
+}
+
+.nav_item:hover{
+    color:#000000;
 }
 
 .nav_item:hover::after{
