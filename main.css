@@ -9,7 +9,9 @@
 
 
 body{
+
     background: #222;
+    
 }
 
 
@@ -43,6 +45,7 @@ body{
 .nav_item{
     position: relative;
 
+    /* border-bottom: blanchedalmond solid 1px; */
 }
 
 .nav_item::after{
@@ -51,14 +54,16 @@ body{
     background-color: #000000;
     height: 3px;
     width: 0;
-    left:0;
+    left:0; 
     bottom: -10px;
     transition: all 0.3s ease;
-
+    
 }
 
 .nav_item:hover{
     color:#000000;
+    /* border-bottom:#000000 solid 1px;
+    transition: all 0.3s ease; */
 }
 
 .nav_item:hover::after{
@@ -101,7 +106,7 @@ a{
 }
 
 .content{
-    background-image: linear-gradient(to bottom right, #F0F, #F00);
+    background-image: linear-gradient(to bottom right, #F0F,#F00);
     height: 300vw;
     width: 100vw;
     padding-top: 10vh;
